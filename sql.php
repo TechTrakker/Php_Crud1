@@ -1,0 +1,14 @@
+<?php
+ CREATE DATABASE IF NOT EXISTS php_crud1;
+
+ USE php_crud1;
+ 
+ CREATE TABLE IF NOT EXISTS users (
+     id INT AUTO_INCREMENT PRIMARY KEY,
+     name VARCHAR(100) NOT NULL,
+     email VARCHAR(100) NOT NULL,
+     phone VARCHAR(20) NOT NULL,
+     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ );
+ 
+?>
